@@ -26,15 +26,16 @@
     <div class="container">
       <div class="description-title-row">
         <h1>Carrd</h1>
-        <div class="type-label type-label-bordered">demo</div>
+        <div class="type-label type-label-bordered">no-code</div>
       </div>
       <p>By <a href="https://twitter.com/ajlkn">AJ</a></p>
       <div class="toolbar">
         <div class="buttons">
-          <button class="mdc-button mdc-button--outlined" onclick="window.location.href = 'https://flutter.github.io/gallery';"><span class="mdc-button__ripple"></span> Launch App</button><button class="mdc-button mdc-button--outlined" onclick="window.location.href = 'https://github.com/flutter/gallery';">
+          <button class="mdc-button mdc-button--outlined" onclick="window.location.href = 'https://carrd.co';"><span class="mdc-button__ripple"></span> Launch Plugin</button>
+          <button class="mdc-button mdc-button--outlined" onclick="window.location.href = 'https://carrd.co/docs/sites/using-a-custom-domain';">
       <div class="mdc-button__ripple"></div>
       <i class="material-icons mdc-button__icon" aria-hidden="true">code</i>
-      <span class="mdc-button__label">Source Code</span>
+      <span class="mdc-button__label">Domain settings</span>
       </button>
         </div>
         <div class="tags-container">
@@ -43,12 +44,12 @@
             <span>Tags</span>
           </div>
           <div class="tags">
-            <a href="./#?search=tag%3Aintermediate">intermediate</a>
-        <a href="./#?search=tag%3Asample">sample</a>
-        <a href="./#?search=tag%3Acarrd">carrd</a>
-        <a href="./#?search=tag%3Amaterial">material</a>
+            <a href="./#?search=tag%3Aintermediate">beginner</a>
+        <a href="./#?search=tag%3Awebsite">website</a>
+        <a href="./#?search=tag%3Aproduct">product</a>
+        <a href="./#?search=tag%3Aone-pager">one-pager</a>
         <a href="./#?search=tag%3Adesign">design</a>
-        <a href="./#?search=tag%3Avignettes">vignettes</a>
+        <a href="./#?search=tag%3Atemplates">templates</a>
           </div>
         </div>
       </div>
@@ -64,11 +65,13 @@
       </div>
       
       <div class="description">
-        <h2>DNS settings</h2>
-        <p>Nameserver: 
-            <code>ns1.carrd.com</code>
-            <code>ns2.carrd.com</code>
-        </p>
+        <h2>Domain settings (DNS records in GeekSpeak)</h2>
+        <br>
+        <section class="content"><p class="pro-note">Requires <a href="/docs/pro/plans#pro">Pro Standard</a> or higher</p><p>Carrd sites can be published to .carrd.co URLs, custom domains, and <a href="/docs/sites/using-a-custom-subdomain">custom subdomains</a>. To publish a site to a custom domain, follow these steps:</p><ol class="steps major"><li><p>Click <strong class="build-icon save">Publish</strong></p></li><li><p>Set <strong>URL</strong> to <strong>Use my own domain</strong>.</p></li><li><p>Enter the <strong>domain name</strong> <em>exactly</em> as you want it to appear in the address bar (either <code>domain.ext</code> or <code>www.domain.ext</code>). The version you <em>don't</em> use will automatically forward to the other; in other words, using <code>domain.ext</code> will <em>automatically</em> redirect <code>www.domain.ext</code> to it (and vice versa).</p></li><li><p id="add-host-records" data-anchor="">Scroll down a bit to locate the site's <strong>host records</strong>. These will "point" the domain to the Carrd site and usually need to be set up over at your domain registrar. For most domains, you'll be asked to add the following records:</p><ul class="checklist special"><li>An <strong>A</strong> record pointing <code>@</code> to the <strong>first</strong> target IP address shown (eg. <code>xxx.xxx.xxx.xxx</code>)</li><li>An <strong>A</strong> record pointing <code>@</code> to the <strong>second</strong> target IP address shown (eg. <code>yyy.yyy.yyy.yyy</code>)</li><li>A <strong>CNAME</strong> record pointing <code>www</code> back to the bare domain (eg. <code>domain.ext</code>)</li></ul>
+          <li>
+          <p>Back at Carrd, click <strong class="build-button-primary">Publish Changes</strong></p></li><li class="final"><p><strong>You're done ... <em>almost</em></strong>. Your domain now needs to <strong>initialize</strong>, which is an automatic process that can take <strong>up to an hour</strong> to complete (though it's <em>usually</em> a lot faster than that). Once initialized, you'll be able to access your site using the custom domain you just set up (and do so via <a href="/docs/sites/setting-up-ssl">SSL</a>). Note that if you're using <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a>, be sure to also follow <a href="/docs/sites/using-cloudflare-with-a-domain">these additional steps</a>. </p><p>Note: If your dashboard still lists the domain as "<strong>(initializing)</strong>" after an hour, please refer to the <a href="/docs/sites/troubleshooting#dns-issues">troubleshooting page</a> or simply <a href="/contact">get in touch</a> for assistance.</p>
+          </li>
+        </ol></section>
       </div>
     </div>
   </div>

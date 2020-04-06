@@ -1,3 +1,4 @@
+/* custom CSS */
 code {
     background-color: rgba(27,31,35,.1);
     border-radius: .25rem;
@@ -7,7 +8,155 @@ code {
     margin: 0;
     padding: .15rem .25rem;
 }
+/* CSS for Carrd */
+.pro-note {
+    font-style:italic;
+    color:#DED173;
+    font-size:0.8em
+   }
+   .pro-note:before {
+    content:'';
+    display:inline-block;
+    width:2.5em;
+    height:2.5em;
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='648' height='552' viewBox='0 0 696 552'%3E%3Cpath d='M213,220.1c3.6,5.1,5.4,11.3,5.4,18.5c0,9.9-3.1,17.6-9.3,23.1c-6.2,5.5-16.6,8.2-31.3,8.2h-44.4v-61.4h43.9 c10.3,0,17.4,0.5,21.2,1.5C204.6,211.6,209.4,215,213,220.1z M538.8,213.3c-9.1-5.7-19.3-8.6-30.6-8.6c-16.1,0-29.9,5.5-41.5,16.6 c-11.6,11.1-17.4,29.5-17.4,55.4c0,20.7,5.6,37,16.7,48.9c11.1,11.9,25.1,17.9,41.9,17.9c17.1,0,31.2-6,42.2-18 c11.1-12,16.6-29.1,16.6-51.2c0-14-2.4-26.2-7.1-36.6C554.8,227.2,547.9,219.1,538.8,213.3z M375,250.5c3-4.7,4.6-9.9,4.6-15.4 c0-8.1-3-14.8-8.8-20c-5.9-5.2-15.2-7.9-27.9-7.9h-54.4V264h48.9c10.4,0,18.5-1.1,24.4-3.2C367.5,258.7,372,255.2,375,250.5z M672,72v408c0,13.2-10.8,24-24,24H48c-13.2,0-24-10.8-24-24V72c0-13.2,10.8-24,24-24h600C661.2,48,672,58.8,672,72z M241.9,237.9 c0-8.5-1.7-16.3-5.2-23.4c-3.5-7.1-8.1-12.6-13.8-16.6c-5.7-3.9-12.8-6.6-21.2-8c-6-1.1-14.7-1.6-26.1-1.6h-64.8V360h22.7v-69.8 h44.1c24.3,0,41.1-5.1,50.4-15.2C237.2,264.9,241.9,252.5,241.9,237.9z M417.1,360l-29.9-46.8c-5.9-9.1-12.2-16.8-18.9-22.9 c-3.1-2.8-7.7-5.7-13.7-8.6c16.5-2.3,28.7-7.6,36.6-15.9c7.9-8.4,11.8-18.6,11.8-30.8c0-9.5-2.4-18.1-7.1-25.9 c-4.8-7.8-11.1-13.3-19.1-16.3c-8-3.1-19.6-4.6-34.9-4.6h-76.2V360h22.7v-76.3h26.4c5.9,0,10.1,0.3,12.7,0.8 c3.5,0.9,7,2.4,10.4,4.6c3.4,2.2,7.2,6,11.5,11.5c4.3,5.5,9.8,13.4,16.4,23.7l22.7,35.7H417.1z M590.1,274.3 c0-17.2-3.3-32.6-10-46.1c-6.7-13.6-16.4-24.1-29.1-31.7c-12.7-7.6-27-11.4-42.9-11.4c-24.2,0-44,8.1-59.3,24.2 c-15.3,16.1-23,38.5-23,67c0,15.1,3.3,29.4,9.8,42.9c6.6,13.5,16.2,24.2,28.9,32c12.7,7.8,27.2,11.7,43.4,11.7 c14.9,0,28.8-3.5,41.7-10.6c12.9-7.1,22.9-17.5,29.9-31.2C586.6,307.3,590.1,291.8,590.1,274.3z' fill='%23DED173' /%3E%3C/svg%3E");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:2em;
+    vertical-align:middle;
+    margin-right:0.5em
+   }
+   .pro-note a {
+    color:inherit;
+    border-bottom-color:rgba(222,209,115,0.75)
+   }
+   .pro-note a:hover {
+    border-bottom-color:transparent;
+    color:#fff
+   }
+   .pro-note {
+    margin:-1em 0 2.5em 0
+   }
+   ol.steps {
+    list-style:none;
+    padding-left:0
+   }
+   ol.steps>li {
+    counter-increment:item;
+    padding-left:2.25em;
+    position:relative;
+    margin-top:0.5em
+   }
+   ol.steps>li>* {
+    margin:0 0 2em 0
+   }
+   ol.steps>li>:last-child {
+    margin-bottom:0 !important
+   }
+   ol.steps>li:before {
+    content:counter(item);
+    background-color:#8d73d5;
+    color:#fff;
+    font-weight:bold;
+    display:inline-block;
+    width:1.38889em;
+    height:1.38889em;
+    line-height:1.38889em;
+    border-radius:1.38889em;
+    text-align:center;
+    font-size:0.9em;
+    position:absolute;
+    top:0.27778em;
+    left:0
+   }
+   ol.steps>li:first-child {
+    margin-top:0
+   }
+   ol.steps>li .image {
+    display:block;
+    border-radius:6px
+   }
+   ol.steps>li .image img {
+    display:block;
+    width:100%;
+    border-radius:6px
+   }
+   ol.steps>li .image.mobile {
+    max-width:18em
+   }
+   ol.steps>li>ol.steps>li {
+    counter-increment:sub-item
+   }
+   ol.steps>li>ol.steps>li:before {
+    content:counter(sub-item)
+   }
+   ol.steps>li>ul>li:last-child>:last-child {
+    margin-bottom:0
+   }
+   ol.steps.major {
+    margin:2.5em 0
+   }
+   ol.steps.major>li {
+    padding:0.375em 0 3em 3.75em;
+    margin-top:0
+   }
+   ol.steps.major>li:before {
+    width:2.5em;
+    height:2.5em;
+    line-height:2.5em;
+    border-radius:2.5em;
+    font-size:1em;
+    top:0;
+    z-index:1
+   }
+   ol.steps.major>li:after {
+    content:'';
+    display:block;
+    position:absolute;
+    top:0;
+    left:1.25em;
+    width:1px;
+    height:100%;
+    background:rgba(255,255,255,0.075)
+   }
+   ol.steps.major>li:last-child {
+    padding-bottom:0
+   }
+   ol.steps.major>li:last-child:after {
+    display:none
+   }
+   ol.steps.major>li.final:before {
+    content:'';
+    background-color:#33ada9;
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='648' height='552' viewBox='0 0 648 552'%3E%3Cpath d='M225.3,517.7L2.1,293.1l68.1-67.7L226,382.3L578.1,35.6l67.4,68.4L225.3,517.7z' fill='%23fff' /%3E%3C/svg%3E");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:1em
+   }
 
+   a {
+    -moz-transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;
+    -webkit-transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;
+    -ms-transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;
+    transition:color .2s ease-in-out,border-bottom-color .2s ease-in-out;
+    color: #02569B;
+    text-decoration:none;
+    border-bottom:dotted 1px rgba(255,255,255,0.25)
+   }
+   a:hover {
+    color: #02569B;
+    border-bottom-color:transparent
+   }
+   a.minor {
+    font-size:0.8em;
+    color: #02569B;
+   }
+   a.minor:hover {
+    color: #02569B;
+   }
+   /* end Carrd CSS */
+
+/* template CSS important */
 .mdc-button {
     font-family:Roboto, sans-serif;
     -moz-osx-font-smoothing:grayscale;
