@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="../js/material-components-web.min.js"></script>
   <script defer src="../js/description.dart.js"></script>
+  <script defer src="../js/dnsTabs.js"></script>
 </head>
 
 <body>
@@ -64,33 +65,29 @@
         <img src="../images/glide-screenshot-4.png" alt="screenshot of creat a new project page" />
       </div>
       
-      <div class="description">
-        <h2>Domain settings (DNS records in GeekSpeak)</h2>
-        <br>
-        <h5>If SSL is ON (recommended)</h4>
-        <p>A records: 
-            <p><code>13.248.155.104 & 76.223.27.102</code></p>
-        </p>
-        <p>Webflow CNAME record values should be:
-            <p><code>proxy-ssl.webflow.com.</code></p>
-        </p>
-        <h5>If SSL is OFF (not recommended)</h4>
-        <p>A records: 
-            <p><code>23.235.33.229 & 104.156.81.229</code></p>
-        </p>
-        <p>Webflow CNAME record values should be:
-            <p><code>proxy-ssl.webflow.com.</code></p>
-        </p>
-        <p>To connect your domain to Webflow, check out the <a href="https://university.webflow.com/article/connecting-a-custom-domain">Connecting a custom domain</a> tutorial.</p>
-      </div>
+      <div class="dns-container">
+        <div class="tab-container">
+            <button class="tab" onclick="record(event, 'one')">CNAME</button>
+            <button class="tab" onclick="record(event, 'two')">A Records</button>
+            <button class="tab" onclick="record(event, 'three')">Nameservers</button>
+        </div>
+        <div class="tab-content" id="one">
+            <h1>CNAME</h1>
+            <p>CNAME record like WWW e.g www.example.com or blog.example.com</p>
+        </div>
+        <div class="tab-content" id="two">
+            <h1>A record to point the root domain 'example.com</h1>
+            <p>Paris is the capital of France.</p>
+        </div>
+        <div class="tab-content" id="three">
+            <h1>Nameservers</h1>
+            <p>To point the whole domain settings and setup to the service.</p>
+        </div>
+     </div> <!-- dns-container -->
 
       </div> <!-- div.container -->
     </div> <!-- div.content -->
   
 </body>
-
-<div class="footer">
-  <span>© 2020</span>
-</div>
 
 </html>

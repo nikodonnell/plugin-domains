@@ -8,6 +8,76 @@ code {
     margin: 0;
     padding: .15rem .25rem;
 }
+/* CSS for DNS tabs */
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+     
+}
+
+.dns-container{
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+    padding-bottom: 2.5em;
+}
+
+.dns-container .tab-container{
+    width: 100%;
+    background-color: #eee;
+    overflow: hidden;
+    border: 1px solid #cfcfcf
+    
+}
+.dns-container .tab-container .tab{
+    float: left;
+    padding: 18px;
+    font-size: 17px;
+    cursor: pointer;  
+    background-color: inherit;
+    
+}
+.dns-container .tab-container .tab:hover{
+    background-color: #e1e1e1
+}
+.dns-container .tab-container .tab.active{
+    background-color: #c5c5c5
+}
+
+.dns-container .tab-content {
+    width: 100%;
+    padding: 40px 20px;
+    border: 1px solid #cfcfcf;
+    border-top: 0;
+    position: absolute;
+    display: none;
+    
+    
+}
+.dns-container .tab-content h1{
+    font-weight: 400;
+    font-size: 27px;
+    margin-bottom: 20px;
+    animation: fading 1s;
+}
+.dns-container .tab-content p{
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    animation: fading 2s;
+}
+@keyframes fading{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+/* END CSS for DNS tabs */
+
 /* CSS for Carrd */
 .pro-note {
     font-style:italic;
@@ -8071,7 +8141,7 @@ code {
    .navbar a:active {
     color:#fff
    }
-   .footer {
+   footer {
     display:flex;
     flex-direction:row;
     justify-content:center;
