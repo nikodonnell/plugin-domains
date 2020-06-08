@@ -77,22 +77,39 @@
       <div class="description">
         <h2>Domain settings (DNS records in GeekSpeak)</h2>
         <br>
-        <h5>If SSL is ON (recommended)</h4>
-        <p>A records: 
-            <p><code>13.248.155.104 & 76.223.27.102</code></p>
-        </p>
-        <p>Webflow CNAME record values should be:
-            <p><code>proxy-ssl.webflow.com.</code></p>
-        </p>
-        <h5>If SSL is OFF (not recommended)</h4>
-        <p>A records: 
-            <p><code>23.235.33.229 & 104.156.81.229</code></p>
-        </p>
-        <p>Webflow CNAME record values should be:
-            <p><code>proxy-ssl.webflow.com.</code></p>
-        </p>
+
         <p>To connect your domain to Webflow, check out the <a href="https://university.webflow.com/article/connecting-a-custom-domain">Connecting a custom domain</a> tutorial.</p>
+        <p><a href="https://university.webflow.com/article/connecting-a-custom-domain?wvideo=dyuci0009q"><img src="https://embed-fastly.wistia.com/deliveries/3757454d2c7f0d7fb1ff1658d7a2de24.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=4353ffe0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://university.webflow.com/article/connecting-a-custom-domain?wvideo=dyuci0009q">Connecting a custom domain</a></p>
       </div>
+      <div class="dns-container">
+        <div class="tab-container">
+            <button class="tab" onclick="record(event, 'one')">CNAME</button>
+            <button class="tab" onclick="record(event, 'two')">A Records</button>
+            <button class="tab" onclick="record(event, 'three')">Nameservers</button>
+        </div>
+        <div class="tab-content" id="one">
+            <h1>CNAME</h1>
+            <p>CNAME record like WWW e.g www.example.com or blog.example.com</p>
+            <p>Webflow CNAME record values should be:
+              <p><code>proxy-ssl.webflow.com.</code></p>
+            </p>
+        </div>
+        <div class="tab-content" id="two">
+
+            <h5>If SSL is ON (recommended)</h4>
+              <p>A records: 
+                  <p><code>13.248.155.104 & 76.223.27.102</code></p>
+              </p>
+              <h5>If SSL is OFF (not recommended)</h4>
+                <p>A records: 
+                    <p><code>23.235.33.229 & 104.156.81.229</code></p>
+                </p>
+        </div>
+        <div class="tab-content" id="three">
+            <h1>Nameservers</h1>
+            <p>To point the whole domain settings and setup to the service.</p>
+        </div>
+     </div> <!-- dns-container -->
     </div>
   </div>
 </body>
