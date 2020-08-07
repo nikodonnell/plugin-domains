@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Plugin Domains</title>
+  <link href="../styles.css" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Google+Sans+Display|Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../js/material-components-web.min.js"></script>
+  <script defer src="../js/description.dart.js"></script>
+  <script defer src="../js/dnsTabs.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167980147-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167980147-1');
+</script> -->
+
+</head>
+
+<body>
+  <div class="content">
+    <div class="navbar">
+      <a class="leading" href="https://plugin.domains/">
+        <img src="../images/Circle-icons-plugin.png" />
+        <span class="title">Plugins</span> 
+      </a>
+      <div class="nav-items">
+        <a href="https://plugin.domains/">Home</a>
+        <a href="https://api.plugin.domains/">API Docs</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="description-title-row">
+        <h1>GitHub Pages</h1>
+        <div class="type-label type-label-bordered">Free</div>
+      </div>
+      <p>GitHub</p>
+      <div class="toolbar">
+        <div class="buttons">
+          <button class="mdc-button mdc-button--outlined" onclick="window.location.href = 'https://www.glideapps.com/';"><span class="mdc-button__ripple"></span> Launch Plugin</button><button class="mdc-button mdc-button--outlined" onclick="window.location.href = 'https://docs.glideapps.com/all/etc/account/glide-pro/configuring-a-custom-domain';">
+      <div class="mdc-button__ripple"></div>
+      <i class="material-icons mdc-button__icon" aria-hidden="true">code</i>
+      <span class="mdc-button__label">Domain Guide </span>
+      </button>
+        </div>
+        <div class="tags-container">
+          <div class="tags-label">
+            <i class="material-icons">local_offer</i>
+            <span>Tags</span>
+          </div>
+          <div class="tags">
+            <a href="./#?search=tag%3Aintermediate">intermediate</a>
+        <a href="../#?search=tag%3Asample">sample</a>
+        <a href="../#?search=tag%3Agallery">gallery</a>
+        <a href="../#?search=tag%3Amaterial">material</a>
+        <a href="../#?search=tag%3Adesign">design</a>
+        <a href="../#?search=tag%3Avignettes">vignettes</a>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          Websites for you and your projects.
+          Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
+        </p>
+      </div>
+      <div class="screenshots">
+        <img src="../images/github-screenshot-1.png" alt="Showcase of sites made with Glide" />
+        <img src="../images/github-screenshot-2.png" alt="showcase of site templates for ecomerce and business" />
+        <img src="../images/github-screenshot-3.png" alt="screenshot of dashboard" />
+        <img src="../images/github-screenshot-4.png" alt="screenshot of creat a new project page" />
+      </div>
+      
+      <div class="dns-container">
+        <div class="tab-container">
+            <button class="tab" onclick="record(event, 'one')">CNAME</button>
+            <button class="tab" onclick="record(event, 'two')">A Records</button>
+            <button class="tab" onclick="record(event, 'three')">Nameservers</button>
+        </div>
+        <div class="tab-content" id="one">
+            <h1>CNAME</h1>
+            <p>CNAME record like WWW e.g www.example.com or blog.example.com</p>
+        </div>
+        <div class="tab-content" id="two">
+            <h1>A record to point the root domain 'example.com</h1>
+            <p>Paris is the capital of France.</p>
+        </div>
+        <div class="tab-content" id="three">
+            <h1>Nameservers</h1>
+            <p>To point the whole domain settings and setup to the service.</p>
+        </div>
+     </div> <!-- dns-container -->
+
+      </div> <!-- div.container -->
+    </div> <!-- div.content -->
+  
+</body>
+
+</html>
