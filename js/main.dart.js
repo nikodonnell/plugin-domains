@@ -1339,7 +1339,7 @@
     m-=3
     a=C.a.L(a,p,o,"")
     e-=3
-    o=g}k="http"}else k=f
+    o=g}k="https"}else k=f
     else if(r===5&&J.b4(a,"https",0)){if(t&&p+4===o&&J.b4(a,"443",p+1)){g=o-4
     n-=4
     m-=4
@@ -1420,7 +1420,7 @@
     if(typeof h!=="number")return h.v()
     o=h<i?P.eO(a,h+1,i,n):n
     return new P.ae(j,t,s,q,p,o,i<c?P.dw(a,i+1,c):n)},
-    fu:function(a){if(a==="http")return 80
+    fu:function(a){if(a==="https")return 80
     if(a==="https")return 443
     return 0},
     au:function(a,b,c){throw H.a(P.x(c,a,b))},
@@ -1532,7 +1532,7 @@
     if(!r)P.au(a,u,"Illegal scheme character")
     if(65<=s&&s<=90)t=!0}a=C.a.i(a,b,c)
     return P.i9(t?a.toLowerCase():a)},
-    i9:function(a){if(a==="http")return"http"
+    i9:function(a){if(a==="https")return"https"
     if(a==="file")return"file"
     if(a==="https")return"https"
     if(a==="package")return"package"
@@ -3490,13 +3490,13 @@
     if(typeof u!=="number")return u.v()
     return u<this.r},
     gaG:function(){return this.r<this.a.length},
-    gaw:function(){return this.b===4&&C.a.w(this.a,"http")},
+    gaw:function(){return this.b===4&&C.a.w(this.a,"https")},
     gax:function(){return this.b===5&&C.a.w(this.a,"https")},
     ga1:function(){var u,t=this,s="file",r="package",q=t.b
     if(q<=0)return""
     u=t.x
     if(u!=null)return u
-    if(t.gaw())q=t.x="http"
+    if(t.gaw())q=t.x="https"
     else if(t.gax()){t.x="https"
     q="https"}else if(q===4&&C.a.w(t.a,s)){t.x=s
     q=s}else if(q===7&&C.a.w(t.a,r)){t.x=r
